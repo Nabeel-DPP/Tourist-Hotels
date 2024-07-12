@@ -1,0 +1,127 @@
+body
+{
+  
+    font-family: "Heebo", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container
+{
+    flex:1;
+}
+.navbar
+{
+    height: 70px;
+    background-color: rgb(214, 219, 217);
+}
+.fa-compass
+{
+    color: rgb(19, 114, 197);
+    font-size: 40px;
+}
+.nav-link
+{
+    color: rgb(0, 0, 0) !important;
+    font-size: 18px !important;
+}
+.f-links a
+{
+ text-decoration: none;
+ color: black;
+}
+.f-links a:hover
+{
+ text-decoration: underline;
+
+}
+.footer-info
+{  
+    
+    text-align: center;
+    height: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    background-color: rgb(214, 219, 217);
+}
+.f-info-icons , .f-links ,.f-info-brand
+
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blueviolet; */
+}
+.f-info-icons
+{
+    font-size: 20px;
+    
+    /* margin-right: 20px; */
+    
+}
+.f-info-icons i
+{
+    margin-right: 10px;
+}
+.f-links
+{
+    font-size: 20px;
+}
+.f-links a
+{
+    margin-left: 5px;
+}
+.card
+{
+    border: none !important;
+    margin-bottom: 25px;
+}
+.card-img-top
+{
+    border-radius: 15px !important;
+    width: 100% !important;  
+    object-fit: cover !important; 
+    height: 20rem;
+}
+.card-body
+{
+    padding: 0 !important;
+}
+.card-text
+{
+    font-weight: 500;
+}
+.listing-link
+{
+    text-decoration: none;
+}
+
+.card-img-overlay:hover
+{
+    opacity: 0.3;
+    background-color: aliceblue;
+    transition: 0.5s;
+    
+}
+.btn-color
+{
+    background-color: rgb(19, 114, 197) !important;
+    border: none !important;
+}
+
+.show-img
+{
+    height: 30vh;
+    
+}
+.btns
+{
+    display: flex;
+}
+.show-card
+{
+    padding-left: 0;
+    padding-right: 0;
+}

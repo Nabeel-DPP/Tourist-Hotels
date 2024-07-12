@@ -1,0 +1,50 @@
+<% layout("./layouts/boilerplate")%>
+<body>
+  
+
+    <div class="row">
+        <div class="col-8 offset-2">
+            <br>
+            <h3>Edit the List </h3>
+    <form method="post" action="/listings/<%=list._id%>?_method=PUT" class="needs-validation" novalidate>
+        <div class="mb-3"  >    
+               <label for="title" class="form-label">Title : </label><br>
+        <input type="text" name="listing[title]" value="<%=list.title%>"  class="form-control" required><br>
+    </div>
+      <div class="mb-3">
+        <label for="description" class="form-label"> Description : </label>
+        <textarea name="listing[description]"  class="form-control"  required ><%=list.description%></textarea><br>
+    </div>
+     <div class="mb-3">    
+    <label for="image" class="form-label">Image URL : </label><br>
+        <input type="text" name="listing[image]" value="<%=list.image%>" class="form-control" required><br>
+    </div>
+     <div class="row">
+       <div class="mb-3 col-md-6">
+        <label for="price" class="form-label">Enter Price : </label>
+        <input type="number" name="listing[price]"value="<%=list.price%>" class="form-control" required><br>
+    </div>
+    <div class="mb-3 col-md-6">
+        <label for="location" class="form-label"> Location : </label>
+        <input type="text" name="listing[location]" value="<%=list.location%>" class="form-control" required> <br>
+    </div>
+</div>
+    <div class="mb-3">
+        <label for="country" class="form-label"> Country : </label>
+        <input type="text" name="listing[country]" value="<%=list.country%>" class="form-control" required><br> 
+    </div>
+        <button class="btn btn-dark btn-color mb-3"  >Edit</button>
+    </form>
+    <!-- <br> -->
+</div>
+</div>
+    <!-- <form method="post" action="/listings/<%=list._id%>?_method=PUT">
+        <input type="text" name="listing[title]" value="<%=list.title%>"><br>
+        <textarea name="listing[description]" ><%=list.description%></textarea><br>
+        <input type="number" name="listing[price]" value="<%=list.price%>"><br>
+        <input type="text" name="listing[location]" value="<%=list.location%>"> <br>
+        <input type="text" name="listing[country]" value="<%=list.country%>"><br> 
+
+        <button>Edit</button>
+    </form> -->
+</body>
